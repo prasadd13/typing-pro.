@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TypingPro Practice</title>
+  <link rel="stylesheet" href="practicepage.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Typing pro</h1>
+        </div>
+    <div class="buttons">
+      <a href="Homepage.html" class="cta-button">Home</a>
+      <a href="learningpage.html" class="cta-button">Learning </a>
+      <a href="aboutus.html" class="cta-button">About us </a>
+      </ul>
+</div>
+    </header>
+  <h1>TypingPro - Full Keyboard Practice</h1>
+
+<div>
+
+  <button onclick="startSession()">Start Typing</button>
+  <br><br>
+  <div class="dropdown">
+  <label for="level">Level:</label>
+  <select id="level">
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+
+  <label for="time">Time:</label>
+  <select id="time">
+    <option value="30">30 sec</option>
+    <option value="60">1 min</option>
+    <option value="120">2 min</option>
+    <option value="180">3 min</option>
+  </select>
+  </div>
+ <br>
+ <button onclick="resetSession()">Reset</button>
+</div>
+
+<div id="metrics">
+  <p>Time Left: <span id="timeLeft">0</span>s</p>
+  <p>WPM: <span id="wpm">0</span></p>
+  <p>Accuracy: <span id="accuracy">0</span>%</p>
+  <p>Mistakes: <span id="mistakes">0</span></p>
+</div>
+  <div id="sentenceContainer">
+    <div id="sentence"></div>
+    <textarea id="input" placeholder="Start typing..."></textarea>
+  </div>
+
+ 
+
+
+  <div class="keyboard" id="keyboard"></div>
+
+  <div class="hands">
+    <!-- Left Hand -->
+    <div class="hand hand-left">
+      <div class="hand-left-wrapper">
+        <div class="hand-left-fingers">
+          <div class="finger fin-1_"></div>
+          <div class="finger fin-2_"></div>
+          <div class="finger fin-3_"></div>
+          <div class="finger fin-4_"></div>
+          <div class="finger fin-5_"></div> <!-- Thumb -->
+        </div>
+        <div class="dorsal left-dorsal"></div>
+      </div>
+    </div>
+
+    <!-- Right Hand -->
+    <div class="hand hand-right">
+      <div class="hand-right-wrapper">
+        <div class="hand-right-fingers">
+          <div class="finger fin-6_"></div>
+          <div class="finger fin-7_"></div>
+          <div class="finger fin-8_"></div>
+          <div class="finger fin-9_"></div>
+          <div class="finger fin-10_"></div><!-- Thumb -->
+        </div>
+        <div class="dorsal right-dorsal"></div>
+      </div>
+    </div>
+  </div>
+  <script src="practicepage.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+   font-family: 'Segoe UI', sans-serif;
+   background-color:white;
+   margin: 0;
+   padding: 20px;
+   color: #333;
+ }
+ .logo {
+   color: #002a7f;
+       padding-top: 40px;
+ }
+.nav-buttons{
+   gap: 10px;
+}
+ .cta-button {
+  padding: 10px 20px;
+  background: #ff4b5c;
+  margin-left:40px ;
+  margin-right: 47px;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.cta-button:hover {
+  background: #e13d50;
+}
+.content-des  p{
+  text-align: center;
+  color:#002a7f;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+  background-color:#002a7f;
+  padding: 0%;
+  margin:-20px;
+}
+.logo1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+  padding: 7px;
+}
+ h1 {
+   text-align: center;
+   color: #002a7f;
+   margin-bottom: 30px;
+ }
+ .grid-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 20px;
+   padding: 0 20px;
+   margin-bottom: 82px;
+ }
+
+ .card {
+   background-color: #92dcf0;
+   border: 2px solid #002a7f;
+   border-radius: 12px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   transition: transform 0.3s ease;
+ }
+ .card:hover {
+   transform: scale(1.08);
+ }
+ .card img {
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+   border-bottom: 1px solid #ccc;
+ }
+ .card-content {
+   padding: 15px;
+   color: black;
+ }
+ .card-content h3 {
+   margin: 0;
+   font-size: 18px;
+   color: #1a73e8;
+ }
+ .card-content p {
+   font-size: 14px;
+   margin-top: 10px;
+ }
+ figure img {
+  width: 100%;
+  max-width: 499px;
+  height: auto;
+  border: 3px solid #1f3c88;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+figcaption {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 40px;
+}
+ footer {
+  background-color: #002a7f;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px; 
+}
+.footer{
+margin-top:125px ;
+  padding: 19px -2px;
+  margin: -20px;
+}
+
+  .lesson-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .lesson-btn:hover {
+      background-color: #388e3c;
+    }

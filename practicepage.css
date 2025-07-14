@@ -1,0 +1,306 @@
+#metrics {
+  margin-top: 20px;
+  font-size: 1.1em;
+  display: inline-flex;
+  gap: 40px;
+}
+
+ header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+  background-color:#002a7f;
+  color: white;
+  padding: 0%;
+  margin:-20px;
+}
+
+.logo{
+  margin-left: 30px;
+    text-align: center;
+    font-size: 23px;
+}
+
+
+.buttons{
+
+   gap: 40px;
+   display: flex;
+   margin-right: 40px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background: #ff4b5c;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.cta-button:hover {
+  background: #e13d50;
+}
+
+select, button {
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  background: white;
+  color: black;
+  border:2px solid black
+}
+button:hover {
+  background-color: #00bfff;
+  color: black;
+  cursor: pointer;
+}
+
+body {
+  background: white;
+  color: black;
+  font-family:sans-serif;
+  text-align: center;
+  padding: 12px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#sentence {
+  font-size: 1.4em;
+  background-color: darkblue;
+  font-weight:bold;
+  color: rgb(246, 244, 244);
+  border:2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 65%;
+}
+
+
+textarea {
+  width: 50%;
+  height: 60px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 30px;
+  border:2px solid black;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  max-width: 900px;
+  margin: auto;
+  gap: 5px;
+}
+
+.key {
+  background: cornflowerblue;
+  color: white;
+  border-radius: 5px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  user-select: none;
+  transition: 0.2s;
+  border: 2px solid black
+}
+
+.key.wide { grid-column: span 2; }
+.key.extra-wide { grid-column: span 5; }
+.key.active { background-color: #00bfff; color: black; }
+
+.hands {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.hand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.finger {
+  width: 20px;
+  height: 50px;
+
+  margin: 3px;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+.hand-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.hand-left-wrapper {
+  position: relative;
+  width: fit-content;
+}
+
+/* Row of fingers */
+.hand-left-fingers {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+/* Individual finger heights */
+.finger {
+  width: 20px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.fin-1_ { height: 50px; }
+.fin-2_ { height: 63px; }
+.fin-3_ { height: 72px; }
+.fin-4_ { height: 61px; }
+.fin-5_ { height: 60px; margin-left: 10px; } /* Thumb separated */
+
+.finger.activeFinger {
+  background-color: #00bfff;
+}
+
+.fin-5_ {
+    height: -50px;
+    margin-left: 10px;
+    margin-bottom: -47px;
+    margin-top: 18px;
+    
+}
+/* Dorsal (Palm area) positioned below fin-1 to fin-4 */
+.left-dorsal {
+  position: absolute;
+  top: 80px; /* adjust based on finger height */
+  left: 8px;
+  width: 117px;
+  height: 90px;
+  padding-right: 10px;
+  background-color: cornflowerblue;
+  border:2px solid black;
+  border-radius: 17px 17px 43px 43px;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+
+.hand-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.hand-right-wrapper {
+  position: relative;
+  width: fit-content;
+}
+
+/* Row of fingers */
+.hand-right-fingers {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+/* Individual finger heights */
+.finger {
+  width: 20px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.fin-6_ { height: 60px;margin-left: 10px; }
+.fin-7_ { height: 61px; }
+.fin-8_ { height: 72px; }
+.fin-9_ { height: 63px; }
+.fin-10_ { height: 50px;  } /* Thumb separated */
+
+.finger.activeFinger {
+  background-color: #00bfff;
+}
+
+.fin-6_ {
+    height: -50px;
+    margin-right: 10px;
+    margin-bottom: -47px;
+    margin-top: 18px;
+    
+}
+/* Dorsal (Palm area) positioned below fin-6 to fin-10*/
+.right-dorsal {
+  position: absolute;
+  top: 80px; /* adjust based on finger height */
+  left: 8px;
+  width: 117px;
+  height: 90px;
+  padding-left: 10px;
+  border: 2px solid black;
+  background-color: cornflowerblue;
+  border-radius: 17px 17px 43px 43px;
+  margin-left: 40px;
+  z-index: -1;
+}
+
+.key.extra-wide {
+    grid-column: span 15;
+    padding-left: 0px;
+    margin-left: 108px;
+    margin-right: 108px;
+}
+
+
+
+.key.next {
+  background-color: #ff0;
+  color: black;
+  box-shadow: 0 0 8px #ff0;
+  font-weight: bold;
+   white-space: pre-line;
+}
+
+.key.shiftHint {
+  background-color: #f0f;
+  color: black;
+  box-shadow: 0 0 8px #f0f;
+}
+
+.finger.nextFinger {
+  background-color: #ff0;
+  animation: pulse 1s infinite;
+}
+
+.finger.shiftFinger {
+  background-color: #f0f;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+
+
